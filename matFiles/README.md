@@ -1,1 +1,2 @@
-New readme file
+- list of matfile needed to generate figures
+- `df_cleaned.mat` was not included due to its size>100MB. Please check the google drive for access.
