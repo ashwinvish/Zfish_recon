@@ -21,5 +21,6 @@
 
 9. ` df_cleaned.mat` --> Synapse edge list at data frame
 		 `df_cleaned.mat` was not included due to its size>100MB. Please check the google drive for access.
+10. `soma_loc_zbrainSpace_MatOrder_CO_top500_2blocks_gamma038_08062020.mat` --> soma locations of all neurons in the center, identified in `MatOrder_CO_top500_2blocks_gamma038_08062020.mat`. All coordinates are in zbrain atlas space.
 
 
