@@ -15,10 +15,4 @@
 
 % path to synapses edge list 
 
-if ismac
-    addpath(genpath('/Users/ashwin/Documents/'));
-    df = readtable('/Users/ashwin/Google Drive/Zfish/SynapseDetector/04152019.csv');
-else
-    addpath(genpath('/usr/people/ashwinv/seungmount/research/Ashwin/Scripts'));
-    df = readtable('/usr/people/ashwinv/seungmount/research/Ashwin/SynapseDetector/11252018.csv');
-end
+df = readtable('../matFiles/04152019.csv');
