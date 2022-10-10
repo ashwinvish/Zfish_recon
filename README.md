@@ -6,6 +6,7 @@ Contains scripts to analyze the reconstructions from the hindbrain dataset.
 - `\scripts` - contains all the scritps needed to generate the figures in the pre-print.
 - `\matFiles` - Important .matFiles, are used in analysis and figures. 
 - `\skeletons` - contains most if not all skeltons used for analysis in the paper. Any missing skeletons will be preserved in the private google drive folder used by the lab.
+- `fig_mFiles` - contains some of the m files, that generate the figures from the manuscript.
 
 ## Terminology
 -   `scw` is the commin extension for representing neurnal skeletons.
