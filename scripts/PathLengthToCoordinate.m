@@ -4,12 +4,12 @@ function [pathLength,k] = PathLengthToCoordinate(pointCloud,cellID)
 % cellID is the ID of the cell
 
 % file path to .swc files
-filePath  = '/Users/ashwin/Google Drive/Zfish/LowEMtoHighEM//SWC_all/combinedConsensus-resampled/';
+filePath  = '../skeletons/combinedConsensus-resampled/';
 fileName = sprintf('%d_reRoot_reSample_5000.swc',cellID);
 %fileName = sprintf('%d.swc',cellID);
 
 if exist(fullfile(filePath,fileName))==0
-    filePath  = '/Users/ashwin/Google Drive/Zfish/LowEMtoHighEM/SWC_all/consensus-20190923/swc/';
+    filePath  = '../skeletons/consensus-20190923/swc/';
 end
 
 [inTree,~,~] = load_tree(fullfile(filePath,fileName));
