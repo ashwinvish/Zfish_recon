@@ -23,4 +23,13 @@
 		 `df_cleaned.mat` was not included due to its size>100MB. Please check the google drive for access.
 10. `soma_loc_zbrainSpace_MatOrder_CO_top500_2blocks_gamma038_08062020.mat` --> soma locations of all neurons in the center, identified in `MatOrder_CO_top500_2blocks_gamma038_08062020.mat`. All coordinates are in zbrain atlas space.
 
+11. `tformRough-LowEMtoHighEM-set2-Elavl3-Mnx-SB-set4.mat` --> transformation matrix to convert from neuroglancer space to z-brain atlas space.
+
+12. `AllCells.mat` --> List of call cells reconstructed
+
+13. `block1_cleaned_gamma038_08072020.mat` --> list of cells in block1 (Axial module) from the center matrix
+
+14. `block2_cleaned_gamma038_08072020.mat` --> list of cells in block2 (ocular module) from the center matrix
+
+
 
