@@ -2,7 +2,7 @@ clc
 clear 
 %
 load AllCells.mat
-load df_cleaned.mat
+load df_cleaned.mat % need access since large file
 load ConnMatrixPre_cleaned.mat
 
 allAxonID = df_cleaned.presyn_segid(:);

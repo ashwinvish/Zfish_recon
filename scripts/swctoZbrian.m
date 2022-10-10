@@ -3,14 +3,8 @@ function tree =  SwctoZbrian(cellID)
 % cellID is a nx1 vector of the cell IDs that need to be transfromed.
 
 % load path where .swc files are stored
-if ismac
-    addpath(genpath('/Users/ashwin/Documents/LabWork'));
-    fname  = '/Users/ashwin/Google Drive/Zfish/LowEMtoHighEM/SWC_all/combinedConsensus-resampled';
-    
-else
-    addpath(genpath('/usr/people/ashwinv/seungmount/research/Ashwin/Scripts'));
-    fname =  '/usr/people/ashwinv/seungmount/research/Ashwin/Z-Brain/LowEMtoHighEM/SWC_all/consensus-20180920/swc/';
-end
+
+fname = '../skeletons/combinedConsensus-resampled'
 
 
 for i = 1:numel(cellID)   
@@ -64,12 +58,9 @@ for i = 1:numel(cellID)
     % perform transformation
     % load matlab transform object to transform from NG space to Z-brain
     % space
+
+    load '../matFiles/tformRough-LowEMtoHighEM-set2-Elavl3-Mnx-SB-set4.mat'
     
-    if ismac
-        load('/Users/ashwin/Google Drive/Zfish/LowEMtoHighEM/tformRough-LowEMtoHighEM-set2-Elavl3-Mnx-SB-set4.mat');
-    else
-        load('/usr/people/ashwinv/seungmount/research/Ashwin/Z-Brain/LowEMtoHighEM/tformRough-LowEMtoHighEM-set2.mat');
-    end
     
     % transform from voxels to microns
     coord(:,1) = coord(:,1) * 0.798 ;

@@ -24,14 +24,9 @@ else
 end
 
 % add path .swc files of reconstructed neurons
-if ismac
-    addpath(genpath('/Users/ashwin/Documents/LabWork'));
-    fname  = '/Users/ashwin/Google Drive/Zfish/LowEMtoHighEM//SWC_all/combinedConsensus-resampled/';
-    
-else
-    addpath(genpath('/usr/people/ashwinv/seungmount/research/Ashwin/Scripts'));
-    fname =  '/usr/people/ashwinv/seungmount/research/Ashwin/Z-Brain/LowEMtoHighEM/SWC_all/consensus-20180920/swc/'
-end
+
+fname  = '../skeletons/combinedConsensus-resampled/';
+
 
 %% Read reference brain or any brain from the ref atlas
 % NOTE: Original files needs to be rotated ccw 90 and the zaxis needs to be
@@ -166,12 +161,9 @@ for i = 1:length(cellID)
     % load the Matlba transform object to transform from NG space to Zbrain
     % space
     
-    if ismac
-        load('/Users/ashwin/Google Drive/ZFish/LowEMtoHighEM/tformRough-LowEMtoHighEM-set2-Elavl3-Mnx-SB-set4.mat');
-        %load('/Users/ashwin/Google Drive/ZFish/LowEMtoHighEM/tformRough-LowEMtoHighEM-set3.mat');
-    else
-        load('/usr/people/ashwinv/seungmount/research/Ashwin/Z-Brain/LowEMtoHighEM/tformRough-LowEMtoHighEM-set2.mat');
-    end
+
+    load('../matFiles/tformRough-LowEMtoHighEM-set2-Elavl3-Mnx-SB-set4.mat');
+  
     
     % transform from voxels to microns
     

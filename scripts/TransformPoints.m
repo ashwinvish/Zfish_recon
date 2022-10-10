@@ -46,7 +46,7 @@ if mipLevel == 0
     % perform transformation, load matlab transform object
     %(transforms were computed in micron space)
     
-    load('/Users/ashwin/Google Drive/Zfish/LowEMtoHighEM/tformRough-LowEMtoHighEM-set2-Elavl3-Mnx-SB-set4.mat');
+    load('../matFiles/tformRough-LowEMtoHighEM-set2-Elavl3-Mnx-SB-set4.mat');
     
     % transform from voxels to microns.
     coord(:,1) = coord(:,1) * 0.798 ;
