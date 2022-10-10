@@ -3,7 +3,7 @@ function [logical] = isExistReRoot(cellID)
 
 % path to re-rooted and resampled .swc files
 
-filePath  = '/Users/ashwin/Google Drive/Zfish/LowEMtoHighEM/SWC_all/combinedConsensus-resampled/';
+filePath  = '../skeletons/combinedConsensus-resampled/';
 reSampleFactor = 5000;
 
 for i = 1:length(cellID)
