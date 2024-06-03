@@ -45,4 +45,3 @@ cdummy = confusion;
 cdummy( idummy ) = confusion( idummy )./pdummy( idummy );
 distance = -sum( p1.*locallog( p1 ))-sum( p2.*locallog( p2 ))-2*sum( sum( confusion.* locallog( cdummy )));
 distance = distance/log(2);
-
