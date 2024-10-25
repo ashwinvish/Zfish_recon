@@ -15,3 +15,6 @@ Contains scripts to analyze the reconstructions from the hindbrain dataset.
 -   `scw` is the common extension for representing neuronal skeletons.
     -   `Root` - root node of the tree, typically is the soma. For trees without somas in the reconstructed volume, the first plane of the 3D volume is considered as the root node. 
 -   `Zbrain` - refers to the Zbrain atals for larval zebrafish developed by the Engert lab.
+
+# Large files
+-	Some large files to run the funcuton `isRhombomere.m` are located here https://drive.google.com/drive/folders/1eYR6s-Lb6w0D4RkY8tmQwHO5b5oLUsO8?usp=drive_link
